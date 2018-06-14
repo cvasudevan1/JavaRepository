@@ -1,0 +1,17 @@
+package come.test;
+
+public class ComparatorTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+class Employees
+{
+	int empId;
+	String name;
+	
+}

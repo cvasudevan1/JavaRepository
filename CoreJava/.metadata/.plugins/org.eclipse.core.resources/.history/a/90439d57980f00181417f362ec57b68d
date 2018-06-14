@@ -1,0 +1,20 @@
+package come.test;
+
+import java.util.ArrayList;
+import java.util.TreeSet;
+
+public class TreeSample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		TreeSet ts = new TreeSet();
+		ArrayList as = new ArrayList();
+		as.add(5);
+		ts.add(1);
+		ts.add(2);
+		ts.add(3);
+		ts.addAll(as);
+		System.out.println(ts);
+	}
+
+}

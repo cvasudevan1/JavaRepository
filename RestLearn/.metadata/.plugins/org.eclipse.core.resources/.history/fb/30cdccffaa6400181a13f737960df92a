@@ -1,0 +1,15 @@
+package com.learn.myrest;
+
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+
+@Path("RestService/helloworld")
+@Produces("application/text")
+public class HelloWorld {
+	@GET
+	public String displayHelloWorld()
+	{
+		return "Success HelloWorld";
+	}
+}

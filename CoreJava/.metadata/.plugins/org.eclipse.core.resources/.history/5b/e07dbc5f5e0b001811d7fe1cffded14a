@@ -1,0 +1,28 @@
+package come.test;
+
+import java.util.Comparator;
+
+public class ComparatorTest {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}
+
+class Employees
+{
+	int empId;
+	String name;
+	public Employees(int a, String myName)
+	{
+		empId=a;
+		name=myName;
+	}
+}
+class IdCompare implements Comparator
+{
+	
+}
+

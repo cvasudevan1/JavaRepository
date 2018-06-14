@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;come.test.dfs.java&apos; to &apos;ReplaceCharacters.java&apos;&#x0D;&#x0A;- Original project: &apos;Test1&apos;&#x0D;&#x0A;- Original element: &apos;come.test.dfs.java&apos;&#x0D;&#x0A;- Renamed element: &apos;come.test.ReplaceCharacters.java&apos;" description="Rename compilation unit &apos;dfs.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;come.test{dfs.java" name="ReplaceCharacters.java" references="false" stamp="1517891632324" version="1.0"/>
+</session>

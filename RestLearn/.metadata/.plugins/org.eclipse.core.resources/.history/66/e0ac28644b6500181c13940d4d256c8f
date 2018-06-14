@@ -1,0 +1,34 @@
+package com.learn.myrest;
+
+import javax.ws.rs.FormParam;
+import javax.ws.rs.GET;
+import javax.ws.rs.POST;
+import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
+
+@Path("helloworld")
+public class HelloWorld {
+	@PathParam("id") String id;
+	@GET
+	@Produces(MediaType.TEXT_PLAIN)
+	public String displayHelloWorld()
+	{
+		return "Success HelloWorld";
+	}
+	@GET
+	@Produces(MediaType.TEXT_PLAIN)
+	@Path("{id}")
+	public String displayHelloWorldWithParam(@FormParam("id") String id1)
+	{
+		
+		return "Success HelloWorld with Param "+id;
+	}
+	@POST
+	@Produces(MediaType.TEXT_PLAIN)
+	public String displayHelloWorld1()
+	{
+		return "Success HelloWorld";
+	}
+}

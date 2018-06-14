@@ -1,0 +1,27 @@
+package come.test;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.TreeSet;
+
+public class TreeSample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		TreeSet<Integer> ts = new TreeSet<Integer>();
+		ArrayList as = new ArrayList();
+		HashMap hm = new HashMap();
+		HashSet hs= new HashSet();
+		hm.put(1, "One");
+		hs.add(7);
+		as.add(5);
+		ts.add(1);
+		ts.add(2);
+		ts.add(3);
+		ts.addAll(as);
+		ts.addAll(hs);
+		System.out.println(ts);
+	}
+
+}

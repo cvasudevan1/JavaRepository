@@ -1,0 +1,42 @@
+package com.learn.collections;
+
+import java.util.TreeSet;
+
+public class TreeSetTest {
+
+	public static void main(String[] args) {
+		TreeSet<Employee> emp = new TreeSet<Employee>();
+		Employee e1 = new Employee(1, "Vasu");
+		Employee e2 = new Employee(2, "Navi");
+		emp.add(e1);
+		emp.add(e2);
+
+	}
+
+}
+class Employee
+{
+	String name;
+	int empId;
+	Employee()
+	{
+	}
+	Employee(int id, String name)
+	{
+		this.name=name;
+		this.empId=id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getEmpId() {
+		return empId;
+	}
+	public void setEmpId(int empId) {
+		this.empId = empId;
+	}
+	
+}

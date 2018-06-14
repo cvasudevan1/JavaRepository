@@ -1,0 +1,18 @@
+package come.test;
+
+public class Test{
+  
+    public static void main(String args[]) {
+        //shows that private method can not be overridden in Java     
+    	Test test = new Test();
+    	test.getDescription(new Object());
+    	test.getDescription("abc");
+    }
+    public String getDescription(Object obj){
+    	   return obj.toString();
+    	}
+    public String getDescription(String obj){ return obj; 
+    } 
+    }
+    
+    //public void getDescription(String obj){ return obj; }}

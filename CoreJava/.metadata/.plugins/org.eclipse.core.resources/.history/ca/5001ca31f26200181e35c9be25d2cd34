@@ -1,0 +1,35 @@
+package com.learn.collections;
+
+import java.util.TreeSet;
+
+public class TreeSetTest {
+
+	public static void main(String[] args) {
+		TreeSet<Employee> emp = new TreeSet<Employee>();
+		Employee e1 = new Employee(3, "Vasu");
+		Employee e2 = new Employee(2, "Navi");
+		Employee e2 = new Employee(6, "Navi");
+		emp.add(e1);
+		emp.add(e2);
+	}
+
+}
+class Employee implements Comparable
+{
+	String name;
+	int empId;
+	Employee()
+	{
+	}
+	Employee(int id, String name)
+	{
+		this.name=name;
+		this.empId=id;
+	}
+	@Override
+	public int compareTo(Object o) {
+		
+		return this.empId-((Employee)o).empId;
+	}
+	
+}

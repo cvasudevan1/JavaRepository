@@ -1,0 +1,26 @@
+package come.test;
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		System.out.println(Math.min(Double.MIN_VALUE, 0.0d));
+		System.out.println(Double.MIN_VALUE);
+		try
+		{
+			System.out.println("abc");
+			System.exit(1);
+	
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		finally
+		{
+			System.out.println("finally");
+		}
+	}
+
+}

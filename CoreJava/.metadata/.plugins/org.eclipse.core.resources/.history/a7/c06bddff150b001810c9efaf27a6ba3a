@@ -1,0 +1,22 @@
+package come.test;
+
+import java.awt.List;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+
+public class CollectionsTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		HashMap<String, String> hm = new HashMap<String, String>();
+		hm.put("1", "2");
+		hm.put("0", "2");
+		hm.put("890", "2");
+		hm.put("90", "2");
+		ArrayList<HashMap> a = new ArrayList<HashMap>();
+			a.add(hm);;	
+		Collections.sort((java.util.List<HashMap>) a);
+	}
+
+}

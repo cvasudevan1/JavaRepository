@@ -1,0 +1,13 @@
+package come.test;
+
+import java.util.TreeSet;
+
+public class TreeSample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		TreeSet ts = new TreeSet();
+		System.out.println(ts.iterator().hashCode());
+	}
+
+}

@@ -1,0 +1,65 @@
+package come.test;
+
+import java.util.ArrayList;
+import java.util.Collections;
+public class SortAList extends Thread
+{
+	public  ArrayList<String> nameList=null;
+	public  SortAList(String name1, String name2,String name3)
+	{
+		nameList=new ArrayList<String>();
+		if(name1!=null)
+			this.nameList.add(name1);
+		if(name2!=null)
+			this.nameList.add(name2);
+		if(name2!=null)
+			this.nameList.add(name3);
+	}
+
+	public static void main(String args[]) throws Exception
+	{
+		SortAList sortingList = new SortAList("Vasu", "Rithu", "Navi");
+		
+		synchronized (sortingList.nameList) {
+			sortingList.start();
+			//sortingList.join();
+		}
+		ArrayList abc = new ArrayList<>();
+		abc.add("Steve");
+		abc.add("Kumar");
+		abc.add("Sharang");
+		
+		sortingList.nameList=abc;
+		
+		SortAList sortingList2 = sortingList;
+		sortingList2.run();
+		//sortingList2.start();
+		if(sortingList2.isAlive())
+			sortingList.interrupt();
+		//sortingList2.join();
+		System.out.println(sortingList.equals(sortingList2));
+	}
+	public synchronized void run()
+	{
+		Collections.sort(this.nameList);
+		System.out.println(this.nameList);
+		try {
+			this.sleep(5000);
+		} catch (InterruptedException e) {
+			System.out.println("Thread Interrupted");
+		}
+	}
+	@Override
+	public int hashCode() {
+		int i = 1;
+		return i;
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if(this.nameList.containsAll((ArrayList)obj))
+		return true;
+		else 
+			return false;
+	}
+	
+}
